@@ -1,0 +1,25 @@
+
+
+body {
+	background-color: black;
+}
+
+h1 {
+	color:white;
+	text-align: center;
+}
+
+.zoom-pic-div-placeholder {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.thumb-pic {
+	/* margin-right: auto;
+	margin-left: auto; */
+	width: 200px;
+}
+
