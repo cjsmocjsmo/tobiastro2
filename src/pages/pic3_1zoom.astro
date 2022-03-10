@@ -1,0 +1,22 @@
+---
+import BackArrow from "../components/BackArrow.astro";
+import ZoomPic from '../components/ZoomPic.astro';
+let {title} = "Tob"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>{title}</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <style global>
+            @import "../styles/global.css";
+        </style>
+    </head>
+    <body class="zoom-main">
+        <BackArrow addr="/" />
+        <ZoomPic addr="/assets/images/pic3_1.webp" />
+    </body>
+</html>

@@ -1,43 +1,42 @@
 ---
-import BackArrow from '../components/BackArrow.astro';
-let title = 'My Astro Site';
+	import BackArrow from '../components/BackArrow.astro';
+	import ThumbPic from '../components/ThumbPic.astro';
+	let {title} = "Tob"
 ---
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<style global>
-		@import "../styles/global.css";
-	</style>
-</head>
-<body>
-	<main>
-		<BackArrow addr="https://frontpageastro.pages.dev"/>
-		<h1>Tob</h1>
-		<div class="column">
-			<a href="/pic4zoom"><img class="thumb-pic" src="/assets/images/thumbs/pic4thumb.webp" alt="fuckit"></a>
-			<a href="/pic5zoom"><img class="thumb-pic" src="/assets/images/thumbs/pic5thumb.webp" alt="fuckit"></a>
-			<a href="/pic7zoom"><img class="thumb-pic" src="/assets/images/thumbs/pic7thumb.webp" alt="fuckit"></a>
-			<a href="/pic8zoom"><img class="thumb-pic" src="/assets/images/thumbs/pic8thumb.webp" alt="fuckit"></a>
-			<a href="/pic9zoom"><img class="thumb-pic" src="/assets/images/thumbs/pic9thumb.webp" alt="fuckit"></a>
-			<a href="/pic10zoom"><img class="thumb-pic" src="/assets/images/thumbs/pic10thumb.webp" alt="fuckit"></a>
-			<a href="/pic12zoom"><img class="thumb-pic" src="/assets/images/thumbs/pic12thumb.webp" alt="fuckit"></a>
-			<a href="/pic1_1zoom"><img class="thumb-pic" src="/assets/images/thumbs/pic1_1thumb.webp" alt="fuckit"></a>
-			<a href="/pic2_1zoom"><img class="thumb-pic" src="/assets/images/thumbs/pic2_1thumb.webp" alt="fuckit"></a>
-			<a href="/pic3_1zoom"><img class="thumb-pic" src="/assets/images/thumbs/pic3_1thumb.webp" alt="fuckit"></a>
-			<a href="/p1zoom"><img class="thumb-pic" src="/assets/images/thumbs/p1thumb.webp" alt="fuckit"></a>
-			<a href="/p2zoom"><img class="thumb-pic" src="/assets/images/thumbs/p2thumb.webp" alt="fuckit"></a>
-			<a href="/p3zoom"><img class="thumb-pic" src="/assets/images/thumbs/p3thumb.webp" alt="fuckit"></a>
-			<a href="/p4zoom"><img class="thumb-pic" src="/assets/images/thumbs/p4thumb.webp" alt="fuckit"></a>
-			<a href="/p5zoom"><img class="thumb-pic" src="/assets/images/thumbs/p5thumb.webp" alt="fuckit"></a>
-			<a href="/pic13zoom"><img class="thumb-pic" src="/assets/images/thumbs/FB_IMG_1thumb.webp" alt="fuckit"></a>
-			<a href="/pic14zoom"><img class="thumb-pic" src="/assets/images/thumbs/FB_IMG_2thumb.webp" alt="fuckit"></a>
-			<a href="/pic15zoom"><img class="thumb-pic" src="/assets/images/thumbs/FB_IMG_3thumb.webp" alt="fuckit"></a>
-			<a href="/pic16zoom"><img class="thumb-pic" src="/assets/images/thumbs/FB_IMG_4thumb.webp" alt="fuckit"></a>
-		</div>
-
-	</main>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>{title}</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<style global>
+			@import "../styles/global.css";
+		</style>
+	</head>
+	<body>
+		<main>
+			<BackArrow addr="https://frontpageastro.pages.dev"/>
+			<h1>Tob</h1>
+			<div class="column">
+				<ThumbPic addr="/pic4zoom" src="/assets/images/thumbs/pic4thumb.webp" />
+				<ThumbPic addr="/pic5zoom" src="/assets/images/thumbs/pic5thumb.webp" />
+				<ThumbPic addr="/pic7zoom" src="/assets/images/thumbs/pic7thumb.webp" />
+				<ThumbPic addr="/pic8zoom" src="/assets/images/thumbs/pic8thumb.webp" />
+				<ThumbPic addr="/pic10zoom" src="/assets/images/thumbs/pic10thumb.webp" />
+				<ThumbPic addr="/pic12zoom" src="/assets/images/thumbs/pic12thumb.webp" />
+				<ThumbPic addr="/pic9zoom" src="/assets/images/thumbs/pic9thumb.webp" />
+				<ThumbPic addr="/pic1_1zoom" src="/assets/images/thumbs/pic1_1thumb.webp" />
+				<ThumbPic addr="/pic2_1zoom" src="/assets/images/thumbs/pic2_1thumb.webp" />
+				<ThumbPic addr="/pic3_1zoom" src="/assets/images/thumbs/pic3_1thumb.webp" />
+				<ThumbPic addr="p1zoom" src="/assets/images/thumbs/p1thumb.webp" />
+				<ThumbPic addr="/p2zoom" src="/assets/images/thumbs/p2thumb.webp" />
+				<ThumbPic addr="/p3zoom" src="/assets/images/thumbs/p3thumb.webp" />
+				<ThumbPic addr="/p5zoom" src="/assets/images/thumbs/p5thumb.webp" />
+				<ThumbPic addr="/pic13zoom" src="/assets/images/thumbs/FB_IMG_1thumb.webp" />
+				<ThumbPic addr="/pic14zoom" src="/assets/images/thumbs/FB_IMG_2thumb.webp" />
+				<ThumbPic addr="/pic15zoom" src="/assets/images/thumbs/FB_IMG_3thumb.webp" />
+				<ThumbPic addr="/pic16zoom" src="/assets/images/thumbs/FB_IMG_4thumb.webp" />
+			</div>
+		</main>
+	</body>
 </html>

@@ -1,29 +1,22 @@
 ---
-
-import BackArrow from "../components/BackArrow.astro";
-let title = 'Gallery';
-
+    import BackArrow from "../components/BackArrow.astro";
+    import ZoomPic from '../components/ZoomPic.astro';
+    let {title} = "Tob"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>{title}</title>
-
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <style global>
-            @import "../styles/global.css";
-        </style>
-    </head>
-
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>{title}</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<style global>
+			@import "../styles/global.css";
+		</style>
+	</head>
     <body class="zoom-main">
-        <BackArrow />
-        <div class="zoom-pic-div">
-            <div class="zoom-pic-div-placeholder">
-                <img  class="zoom-pic" src="/assets/images/p2.webp" />
-            </div>
-        </div>
+        <BackArrow addr="/" />
+        <ZoomPic addr="/assets/images/p2.webp" />
     </body>
 </html>
