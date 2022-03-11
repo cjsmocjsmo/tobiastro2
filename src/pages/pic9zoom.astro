@@ -1,19 +1,14 @@
 ---
-import BackArrow from "../components/BackArrow.astro";
-import ZoomPic from '../components/ZoomPic.astro';
-let {title} = "Tob"
+    import Head from '../components/Head.astro';
+    import BackArrow from "../components/BackArrow.astro";
+    import ZoomPic from '../components/ZoomPic.astro';
+    
 ---
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>{title}</title>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <style global>
-            @import "../styles/global.css";
-        </style>
+        <Head />
     </head>
     <body class="zoom-main">
         <BackArrow addr="/" />
